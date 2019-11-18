@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="http://static.mokucloud.com/html/jquery.2.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/invitation.css">
+</head>
+<body>
+<div id="main">
+    <input type="hidden" id="uid" value="">
+    <input type="hidden" id="login_name" value="">
+    <div id="background_div">
+        <img src="img/background3.jpg">
+    </div>
+    <div id="content_div">
+        <div class="content" id="div1">
+            <!--<div class="font1">您必须先点击报名，才能获得奖励哦~ <p/> ↓&nbsp;&nbsp;&nbsp;↓&nbsp;&nbsp;&nbsp;↓</div>-->
+            <!--<div id="applied_img" hidden><img src="img/applied.png"></div>-->
+            <div id="apply_img" onclick="apply()">
+                <img src="img/apply1.gif">
+            </div>
+        </div>
+        <div class="content" id="div2" style="display: none;">
+            <div id="estimate_div">
+                <div id="applied_img"><img src="img/applied.png"></div>
+                <!--<div class="font1">您已成功报名，快去邀请徒弟做任务吧~</div>-->
+                <div id="estimate">
+                    <div>
+                        <div class="tr">
+                            <span class="td1">
+                                <div id="slaveNum">0</div>
+                                <div>邀请徒弟总数</div>
+                            </span>
+                            <span class="td2">
+                                <div></div>
+                            </span>
+                            <span class="td1" id="black">
+                                <div id="bonus">0</div>
+                                <div>预估奖励</div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="invite" onclick="toRecord()">
+                        查询邀请记录&nbsp;＞
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <dialog class="dialog" id="dialog">
+        <div>
+            <div id="tips">
+                <p>请您登记以下信息</p>
+            </div>
+            <div class="container">
+                <div class="item_div">
+                    <label class="item_label">QQ:</label>
+                    <div class="input_div">
+                        <input class="item_input" id="qq"   type="number"/>
+                    </div>
+                </div>
+                <div class="item_div">
+                    <label class="item_label">微信:</label>
+                    <div class="input_div">
+                        <input class="item_input" id="wechat"  />
+                    </div>
+                </div>
+                <div id="input_tips">
+                    *QQ和微信必填一项哟*
+                </div>
+            </div>
+
+            <div class="submit_div">
+                <div >
+                    <button id="cancel_apply"  onclick="cancelApply()">取消</button>
+                </div>
+                <div >
+                    <button id="confirm_apply"  onclick="confirm()">确认</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="dialog" id="dialog2">
+        <div>
+            <div class="game_over_tip">
+                本期活动已结束报名
+            </div>
+        </div>
+    </dialog>
+</div>
+<script src="js/invitation.js"></script>
+</body>
+</html>
