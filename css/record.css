@@ -1,0 +1,221 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #555555;
+    font-size: 1rem;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+}
+
+html, body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#main {
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.user_item {
+    /*height: 2.5rem;*/
+    height: 100%;
+    width: calc(100% - .35rem - .35rem);
+    /*display: table;*/
+    display: block;
+    align-items: center;
+    /*justify-content: center;*/
+    /*float: left;*/
+    border-radius: 0.45rem;
+    margin: .35rem .35rem 0.175rem;
+    box-shadow: 2px 3px 5px 0px rgba(8, 1, 3, 0.1);
+
+}
+
+.user_item > div:first-child {
+    /*width: 100%;*/
+    height: 2.5rem;
+    width: calc(100% - .35rem - .35rem);
+    margin: auto;
+    /*display: flex;*/
+    /*position: absolute;*/
+}
+
+
+.user_info > div {
+    /*margin: auto;*/
+    height: 100%;
+    float: left;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+
+.user_info > div:nth-child(1) {
+    width: 36%;
+    margin-left: -0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_info > div:nth-child(2) {
+    width: 29%;
+    display: flex;
+    align-items: center;
+}
+ .user_info > div:nth-child(3) {
+    width: 25%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.user_info > div:last-child {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_info > div:last-child > img {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+.user_info > div:nth-child(1) {
+    font-size: 0.8rem;
+}
+
+.user_info:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+.user_info > div:nth-child(2) {
+    font-size: 0.6875rem;
+    color: #989898;
+    text-align: left;
+}
+
+.user_info > div:nth-child(3) {
+    font-size: 0.6875rem;
+    color: #ff3535;
+}
+
+.user_task_container {
+    height: 10.4rem;
+    width: calc(100% - .35rem - .35rem);
+    margin: auto;
+}
+
+.user_task{
+    height: 10.4rem;
+    width: calc(100% - 0.85rem - 0.85rem);
+    margin: auto;
+}
+
+
+
+.w1 div:nth-child(1), .w2 > div:nth-child(1), .task_submit > div:nth-child(1), .task_completed div:nth-child(1) {
+    width: 15%;
+    float: left;
+}
+
+.w1 div:nth-child(1) > img, .w2 > div:nth-child(1) > img, .task_submit > div:nth-child(1) > img, .task_completed div:nth-child(1) > img {
+    max-width: 0.8125rem;
+    max-height: 0.8125rem;
+    margin-left: 40%;
+}
+
+.w1 div:nth-child(2), .w2 > div:nth-child(2), .task_submit > div:nth-child(2), .task_completed div:nth-child(2) {
+    width: 60%;
+    float: left;
+    font-size: 0.8125rem;
+    color: #4f4d4d;
+}
+
+.w1 div:nth-child(3), .w2 > div:nth-child(3), .task_submit > div:nth-child(3), .task_completed div:nth-child(3) {
+    width: 25%;
+    float: left;
+    font-size: 0.6875rem;
+    color: #4f4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w1:after, .w2:after, .task_submit:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.w2:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.w1, .w2, .task_submit, .task_completed {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.w1, .w2, .task_submit {
+    height: 2rem;
+    box-shadow: 0 3px 5px -5px rgba(8, 1, 3, 0.1);
+}
+
+.item {
+    width: calc(100% - 3.5rem - 1rem);
+}
+
+.item_top {
+    font-size: 0.755rem;
+    color: #4f4d4d;
+    width: 100%;
+    height: 50%;
+    padding-top: .5rem;
+}
+
+.item_top > div:nth-child(1), .item_down > div:nth-child(1) {
+    width: 45%;
+
+    text-align: left;
+    float: left;
+}
+
+.item_down {
+    font-size: 0.655rem;
+    color: #989898;
+    width: 100%;
+    height: 50%;
+}
+
+.item_down > div:nth-child(2), .item_top > div:nth-child(2) {
+    width: 45%;
+    text-align: right;
+    float: right;
+    margin-right: .5rem;
+}
